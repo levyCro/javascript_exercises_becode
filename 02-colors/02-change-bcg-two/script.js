@@ -4,5 +4,13 @@
 (function() {
 
     // your code here
+    const button = document.querySelector('#run')
+    button.addEventListener('click', () => {
+
+        let inputColor = document.querySelector('#color').value
+        document.body.style.backgroundColor = inputColor
+    })
+
+    
 
 })();
