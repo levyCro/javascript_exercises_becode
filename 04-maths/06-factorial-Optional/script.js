@@ -8,6 +8,21 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        let  inputNumber = document.querySelector('#number').value
+        function factorial(n) {
+          let answer = 1;
+          if (n == 0 || n == 1) {
+            return answer;
+          } else {
+            for (var i = n; i >= 1; i--) {
+              answer = answer * i;
+            }
+            return answer;
+          }
+        }
+        let n = inputNumber;
+        answer = factorial(n);
+        console.log("The factorial of " + n + " is " + answer);
 
     });
 

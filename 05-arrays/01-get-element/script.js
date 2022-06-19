@@ -1,7 +1,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var fruits = [
         "apple",
@@ -18,6 +18,11 @@
         "cherry",
     ];
 
-    // your code here
+    const button = document.querySelector('#run')
+    button.addEventListener('click', () => {
+        console.log(fruits[3])
+    })
+
+
 
 })();
