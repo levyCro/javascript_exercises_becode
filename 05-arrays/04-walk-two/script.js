@@ -1,4 +1,4 @@
-// NOTE: don't focus on the existing code structure for now.
+ // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
 (function() {
@@ -19,5 +19,14 @@
     ];
 
     // your code here
+      document.querySelector("#run").addEventListener("click", () => {
+        let text = "";
+        fruits.forEach(listOfFruits);
+        alert(text);
+        function listOfFruits(item, index) {
+          text += +" "+ index + " : " +item +" ";
+        
+        }
+      });
 
 })();
